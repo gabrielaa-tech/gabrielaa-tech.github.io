@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gabriela Godoy — Front-End Developer</title>
+<meta name="description" content="Gabriela Godoy — Front-End Developer specializing in HTML, CSS, JavaScript, PHP and WordPress. Open to remote opportunities.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- Favicon -->
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#181322">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo">gabriela<span class="dot">.</span>godoy</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#contact" class="nav-cta" data-i18n="nav.contact">Contact</a>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button class="lang-btn active" data-lang="en" type="button">EN</button>
+          <button class="lang-btn" data-lang="pt" type="button">PT</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Front-End Developer</p>
+        <h1><span data-i18n="hero.title1">I build fast, clean</span><br><span data-i18n="hero.title2">interfaces for the web.</span></h1>
+        <p class="hero-sub" data-i18n="hero.sub">Information Systems student and front-end developer working with HTML, CSS, JavaScript, PHP and WordPress. Based in Brazil, open to remote roles with international teams.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" data-i18n="hero.btnPrimary">See my work</a>
+          <a href="#contact" class="btn btn-ghost" data-i18n="hero.btnGhost">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero-code" aria-hidden="true">
+        <div class="code-tab">gabriela-godoy.js</div>
+        <pre class="code-block"><span class="cm">// front-end developer · open to remote work</span>
+<span class="kw">const</span> developer = {
+  <span class="prop">name</span>: <span class="str">'Gabriela Godoy'</span>,
+  <span class="prop">stack</span>: [<span class="str">'HTML'</span>, <span class="str">'CSS'</span>, <span class="str">'JavaScript'</span>, <span class="str">'PHP'</span>, <span class="str">'WordPress'</span>],
+  <span class="prop">loves</span>: [<span class="str">'pink'</span>, <span class="str">'cats'</span>, <span class="str">'clean code'</span>],
+  <span class="prop">location</span>: <span class="str">'Brazil (GMT-3)'</span>,
+  <span class="prop">remote</span>: <span class="kw">true</span>,
+};</pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="wrap about-inner">
+      <div class="section-head">
+        <p class="section-num">01</p>
+        <h2 data-i18n="about.heading">About</h2>
+      </div>
+      <div class="about-inner">
+        <div class="about-photo-wrap">
+          <img src="img/profile.jpg" alt="Gabriela Godoy" class="about-photo">
+          <div class="about-photo-deco">💗</div>
+        </div>
+        <div class="about-body">
+          <p data-i18n="about.p1">I'm a front-end developer and Information Systems student, currently building responsive, production websites with HTML, CSS, JavaScript, PHP and WordPress. I turn Figma designs into pixel-accurate, cross-device interfaces, with a strong focus on usability and performance.</p>
+          <p data-i18n="about.p2">Before development, I spent time in customer support and administrative roles across healthcare, education and telecom — work that sharpened how I communicate, solve problems, and manage priorities under pressure. I bring that same care to how I build and ship interfaces.</p>
+          <p data-i18n="about.p3">I'm actively looking for remote front-end opportunities with international teams, where I can keep growing technically while contributing from day one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PETS ============ -->
+  <section class="pets">
+    <div class="wrap pets-inner">
+      <div class="pets-text">
+        <h3 data-i18n="pets.heading">My QA team</h3>
+        <p data-i18n="pets.text">Every deploy gets reviewed by two very strict code reviewers. They mostly nap on the job, but morale is high.</p>
+      </div>
+      <div class="pets-photos">
+        <div class="pet-card">
+          <img src="img/cat-tabby.jpg" alt="Orange tabby cat, code reviewer">
+          <span data-i18n="pets.cat1">Senior Napper</span>
+        </div>
+        <div class="pet-card">
+          <img src="img/cat-black.jpg" alt="Black cat, code reviewer">
+          <span data-i18n="pets.cat2">Chief Distraction Officer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="skills" id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-num">02</p>
+        <h2 data-i18n="skills.heading">Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3 data-i18n="skills.card1">Languages &amp; Markup</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>PHP</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3 data-i18n="skills.card2">CMS &amp; Tools</h3>
+          <ul>
+            <li>WordPress</li>
+            <li>Git &amp; GitHub</li>
+            <li>Figma → code</li>
+            <li>VS Code</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3 data-i18n="skills.card3">Practices</h3>
+          <ul>
+            <li>Responsive design</li>
+            <li>Cross-browser compatibility</li>
+            <li>Web performance basics</li>
+            <li>Accessibility fundamentals</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="projects" id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-num">03</p>
+        <h2 data-i18n="projects.heading">Projects</h2>
+      </div>
+
+      <!--
+        REPLACE THE PLACEHOLDER CARDS BELOW WITH YOUR OWN PROJECTS.
+        Each card needs: a project name, a one-line description, tags,
+        and links to the live site (if any) and/or the GitHub repo.
+        Since your JA Web projects belong to the company, build 2-3
+        small personal projects instead — see the README for ideas.
+      -->
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-thumb thumb-a">
+            <span class="thumb-tag">01</span>
+          </div>
+          <div class="project-body">
+            <h3>Project name</h3>
+            <p>One or two sentences on what this project does and what problem it solves.</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" data-i18n="projects.live">Live site →</a>
+              <a href="#" target="_blank" rel="noopener" data-i18n="projects.code">Code →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb thumb-b">
+            <span class="thumb-tag">02</span>
+          </div>
+          <div class="project-body">
+            <h3>Project name</h3>
+            <p>One or two sentences on what this project does and what problem it solves.</p>
+            <div class="tags">
+              <span>WordPress</span><span>PHP</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" data-i18n="projects.live">Live site →</a>
+              <a href="#" target="_blank" rel="noopener" data-i18n="projects.code">Code →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb thumb-c">
+            <span class="thumb-tag">03</span>
+          </div>
+          <div class="project-body">
+            <h3>Project name</h3>
+            <p>One or two sentences on what this project does and what problem it solves.</p>
+            <div class="tags">
+              <span>JavaScript</span><span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" data-i18n="projects.live">Live site →</a>
+              <a href="#" target="_blank" rel="noopener" data-i18n="projects.code">Code →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="experience" id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-num">04</p>
+        <h2 data-i18n="experience.heading">Experience</h2>
+      </div>
+      <ol class="timeline">
+        <li>
+          <div class="timeline-date">May 2025 — Present</div>
+          <div class="timeline-body">
+            <h3 data-i18n="experience.job1Title">Web Developer · JA WEB - Soluções Online</h3>
+            <p data-i18n="experience.job1Desc">Develop and maintain responsive institutional websites with HTML, CSS, JavaScript, PHP and WordPress, converting Figma designs into pixel-accurate pages.</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-date">Oct 2024 — May 2025</div>
+          <div class="timeline-body">
+            <h3 data-i18n="experience.job2Title">Customer Service Representative · Giga+ Fibra</h3>
+            <p data-i18n="experience.job2Desc">Provided customer service and technical support, resolving connectivity issues with clear, efficient communication.</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-date">Apr 2024 — Jul 2024</div>
+          <div class="timeline-body">
+            <h3 data-i18n="experience.job3Title">Intern · CNA Idiomas Oficial</h3>
+            <p data-i18n="experience.job3Desc">Handled customer service and administrative/financial support tasks in a fast-paced school environment.</p>
+          </div>
+        </li>
+      </ol>
+      <a class="linkedin-link" href="https://www.linkedin.com/in/gabriela-godoy-586210351/" target="_blank" rel="noopener" data-i18n="experience.linkedin">Full experience on LinkedIn →</a>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="wrap contact-inner">
+      <p class="eyebrow" data-i18n="contact.eyebrow">04 / Get in touch</p>
+      <h2 data-i18n="contact.heading">Let's work together.</h2>
+      <p class="contact-sub" data-i18n="contact.sub">Open to remote front-end roles and freelance projects. Based in Brazil, GMT-3, flexible with international schedules.</p>
+      <div class="contact-links">
+        <a href="mailto:your-email@example.com" class="btn btn-primary">your-email@example.com</a>
+      </div>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/gabriela-godoy-586210351/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p data-i18n="footer.text">© {year} Gabriela Godoy. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
